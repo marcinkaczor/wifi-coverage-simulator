@@ -110,7 +110,6 @@ class App extends Component {
     }, () => this.updateApCoordinates());
   }
   setTransmitParameters = (power, radio, coverage) => {
-    console.log(power, radio, coverage)
     this.setState({
       transmitPower: power,
       radioFrequency: radio,

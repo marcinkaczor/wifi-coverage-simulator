@@ -39,7 +39,6 @@ class Sidebar extends Component {
     });
   }
   render() {
-    console.log('coverage', this.state.coverage)
     return (
       <div className="Sidebar">
         <p className="Sidebar-header">TX Power</p>
