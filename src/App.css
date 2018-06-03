@@ -1,0 +1,25 @@
+.App {
+  margin-right: 280px;
+  font-size: 28px;
+}
+
+.App-coverage {
+  background: rgba(68, 137, 244, 0.4);
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -100;
+}
+
+.App-image {
+  position: absolute;
+  margin: auto;
+  flex: none;
+}

@@ -1,0 +1,6 @@
+Canvas {
+  bottom: 0;
+  right: 280px;
+  position: absolute;
+  pointer-events: none;
+}

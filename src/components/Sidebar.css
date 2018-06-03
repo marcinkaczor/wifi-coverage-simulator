@@ -1,0 +1,122 @@
+.Sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgb(30,40,50), rgb(0,0,0));
+  overflow-x: hidden;
+  padding: 15px;
+  color: white;
+}
+
+.Sidebar-header {
+  color: lightgray
+}
+
+.Sidebar-select {
+  width: 100%;
+  background: inherit;
+  color: white;
+  font: inherit;
+  padding: 5px;
+}
+
+.Sidebar-option {
+  width: 100%;
+  background: inherit;
+  color: black;
+  font: inherit;
+  padding: 3px;
+}
+
+.Sidebar-button {
+  background-color: dodgerblue;
+  border-width: 0;
+  margin: 5px;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  font: inherit;
+}
+
+.Sidebar-button-inverse {
+  background-color: transparent;
+  border-width: 0;
+  margin: 5px;
+  padding: 8px;
+  cursor: pointer;
+  color: white;
+  font: inherit;
+  
+}
+
+.Sidebar-hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* The container */
+.Sidebar-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.Sidebar-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.Sidebar-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.Sidebar-container:hover input ~ .Sidebar-checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.Sidebar-container input:checked ~ .Sidebar-checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.Sidebar-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.Sidebar-container input:checked ~ .Sidebar-checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.Sidebar-container .Sidebar-checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+}
